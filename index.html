@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Prettymatch by wangxiangtao</title>
+    <title>PrettyNeural by wangxiangtao</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -24,7 +24,7 @@
       <header>
         <h1>PrettyNeural         <img src="https://raw.githubusercontent.com/wangxiangtao/PrettyMatch/master/dragonfly.png" style="height: 1em; vertical-align: 0.2em">
        </h1>
-        <p>A Scala Library for String Matching .</p>
+        <p>A Deep Learning Library written in Scala.</p>
         <ul>
           <li><a href="https://github.com/wangxiangtao/PrettyNeural/zipball/master">Download <strong>ZIP File</strong></a></li>
           <li><a href="https://github.com/wangxiangtao/PrettyNeural/tarball/master">Download <strong>TAR Ball</strong></a></li>
@@ -33,11 +33,21 @@
       </header>
       <section>
         <p>PrettyMatch is a deep learning library written in Scala. It is a sub-library of <a href="http://wangxiangtao.github.io/">PrettyMining</a>.
-PrettyNeural include Multi Layer Perceptron, Restricted Boltzmann Machine and Deep Belief Network. The algorithms can be appply on big data set by multithreading or distribution on Spark..</p>
+PrettyNeural include Multilayer Perceptron, Restricted Boltzmann Machine and Deep Belief Network. The algorithms can be appply on big data set by multithreading or distribution on Spark.
+  It also can be a plugin for <a href="http://www.cs.waikato.ac.nz/ml/weka/">Weka</a>.
+</p>
 
 <h2>Features</h2>
 <p>
+<ul>
+<li>Neural Network types: Multilayer Perceptron, Restricted Boltzmann Machine and Deep Belief Network</li>
+<li>Training algorithms: Back Propagation , Contrastive divergence</li>
+<li>Activation functions: Linear , Sigmoid(Logistic) and Approximate Sigmoid</li>
+<li>Enable Multithreading though <a href='https://code.google.com/p/guava-libraries/'></a>Goole Guava library</a> .</li>
+<li>Supporting run on the top of Weka by plugin</li>
+<li>Distribution on Spark (under construction)</li>
 
+</ul>
 </p>
 
 
