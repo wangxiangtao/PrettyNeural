@@ -56,7 +56,21 @@ Multilayer Perceptron, Restricted Boltzmann Machine and Deep Belief Network</li>
 </ul>
 </p>
 
-
+<h2>Example</h2>
+<p>
+  Using <a href='http://yann.lecun.com/exdb/mnist/'>MNIST handwritten dataset</a> to illistrate an example RBM and DBN
+</p>
+<p>
+  To Train a single RBM with 100 hidden nodes
+  <pre>
+        var labels = new File("target/mnist/train-labels-idx1-ubyte.gz")
+        var images = new File("target/mnist/train-images-idx3-ubyte.gz")
+        BinaryMnistRBM.start(labels,images)
+  </pre>
+  Each of the hidden nodes weights are rendered alongside the test digit in blue.
+  <img src='https://camo.githubusercontent.com/9b10f2ec7fa6278b5d1a47631bf30dc4e098dd47/687474703a2f2f746a616b652e6769746875622e636f6d2f696d616765732f4d696e737452424d2e706e67'
+  
+</p>
 <h2>
 <a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
 <p>
