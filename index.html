@@ -61,25 +61,24 @@ Multilayer Perceptron, Restricted Boltzmann Machine and Deep Belief Network</li>
   Using <a href='http://yann.lecun.com/exdb/mnist/'>MNIST handwritten dataset</a> to illistrate an example RBM and DBN
 </p>
 <p>
-  To Train a single RBM with 100 hidden nodes
+  1, To Train a single RBM with 100 hidden nodes
   <pre>
         var labels = new File("target/mnist/train-labels-idx1-ubyte.gz")
         var images = new File("target/mnist/train-images-idx3-ubyte.gz")
-        BinaryMnistRBM.start(labels,images)
-  </pre>
+        BinaryMnistRBM.start(labels,images)</pre>
   <br>
-  Each of the hidden nodes weights are rendered alongside the test digit in blue.<br>
+  Each of the hidden nodes weights are rendered alongside the test digit in blue.
+  <br>
   <img src='https://camo.githubusercontent.com/9b10f2ec7fa6278b5d1a47631bf30dc4e098dd47/687474703a2f2f746a616b652e6769746875622e636f6d2f696d616765732f4d696e737452424d2e706e67'
   <br>
-  To train a Deep Belief Network made up of three RBMs. It learns to match pictures of digits with their corresponding label. It takes about 10m to train but once it's done it has ~95% accuracy rate. The trained DBN is saved to a file
-  
-  <pre>
+  2, To train a Deep Belief Network made up of three RBMs. It learns to match pictures of digits with their corresponding label. It takes about 10m to train but once it's done it has ~95% accuracy rate. The trained DBN is saved to a file<pre>
         var labels = new File("target/mnist/train-labels-idx1-ubyte.gz")
         var images = new File("target/mnist/train-images-idx3-ubyte.gz")
         var saveto = new File("dbn.bin")
         BinaryMnistDBN.start(labels, images, saveto)
   </pre>
 </p>
+<br>
 <h2>
 <a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
 <p>
