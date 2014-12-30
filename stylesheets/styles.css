@@ -1,10 +1,44 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+@font-face {
+  font-family: 'Ovo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ovo'), url(http://fonts.gstatic.com/s/ovo/v7/WqVRExPBh0NGpNgcgzBACQ.woff) format('woff');
+}
 
 body {
-  padding:50px;
-  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#777;
+  background-image: url('https://raw.githubusercontent.com/wangxiangtao/PrettyMatch/master/background.jpg');
+         no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+  margin:0;
+  font:14px/1.7 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#252125;
   font-weight:300;
+  font-family:Ovo;
+}
+
+#nav {
+  background: #222;
+  background-size: cover;
+  color: white;
+  line-height: 40px;
+  padding: 0 30px 0 30px;
+  margin-bottom: 0;
+}
+
+#nav h4 {
+  color: white;
+}
+
+.shadow {
+background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
+background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+height: 30px;
+margin-top: 0;
+padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -13,7 +47,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, ul, ol, table, pre, dl {
-  margin:0 0 20px;
+  margin:0 0 0px;
+  font-family:Ovo;
 }
 
 h1, h2, h3 {
@@ -21,7 +56,9 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size:28px;
+  font-size:46px;
+  font-family:Ovo;
+  font-weight:bold;
 }
 
 h2 {
@@ -33,9 +70,16 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:#39c;
-  font-weight:400;
+  color:#D75F43;
+  font-weight:10;
   text-decoration:none;
+  font-family:Ovo;
+}
+a:hover {
+  color: #D75F43;
+  text-shadow: 0 0 0.4em #FFB, 0 0 2.8em #FFB;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 a small {
@@ -46,7 +90,7 @@ a small {
 }
 
 .wrapper {
-  width:860px;
+  width:1100px;
   margin:0 auto;
 }
 
@@ -58,9 +102,9 @@ blockquote {
 }
 
 code, pre {
-  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
+  font-family:Ovo;
   color:#333;
-  font-size:12px;
+  font-size:14px;
 }
 
 pre {
@@ -96,7 +140,7 @@ img {
 }
 
 header {
-  width:270px;
+  width:370px;
   float:left;
   position:fixed;
 }
@@ -160,7 +204,7 @@ header ul a strong {
 }
 
 section {
-  width:500px;
+  width:650px;
   float:right;
   padding-bottom:50px;
 }
